@@ -10,7 +10,7 @@ reload(app);
 
 let size = 250;
 let fullSize = 600;
-let columns = 2;
+let columns = 6;
 
 
 async function addImageAsync(req, res) {
@@ -61,6 +61,7 @@ async function mainAsync(req, res) {
 
     let row = 0;
     let col = 0;
+    data.reverse();
     for (let img of data) {
         if (col === 0) {
             z += "<tr>";
