@@ -1,0 +1,15 @@
+{
+    "name": "meme-collage-web",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "main": "index.js",
+    "author": "Charlie Cheever <ccheever@expo.io>",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.16.2",
+        "instapromise": "^2.0.7",
+        "reload": "^2.2.2"
+    }
+}
