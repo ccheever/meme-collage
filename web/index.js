@@ -24,6 +24,9 @@ async function addImageAsync(req, res) {
 
 }
 
+let snackUrl = 'https://snack.expo.io/@ccheever/meme-collage-app';
+let workshopUrl = 'https://snack.expo.io/@ccheever/stanford-workshop';
+
 async function mainAsync(req, res) {
     let contents = await fs.promise.readFile('./images.data', 'utf8');
     let lines = contents.split("\n");
@@ -47,7 +50,12 @@ async function mainAsync(req, res) {
 </head>
 <body>
 <script src="/reload/reload.js"></script>
+<div style="font-family: Courier New;">
+<p>In Progress: <a href="${workshopUrl}">${workshopUrl}</a></p>
+<p>Finished: <a href="${snackUrl}">${snackUrl}</a></p>
+</div>
 <table>
+
 
     `;
     let data = [];
